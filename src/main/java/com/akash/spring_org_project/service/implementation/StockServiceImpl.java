@@ -186,7 +186,7 @@ public class StockServiceImpl implements StockService {
 		MimeMessage message = mailSender.createMimeMessage();
 		MimeMessageHelper helper = new MimeMessageHelper(message);
 		try {
-			helper.setFrom("saishkulkarni7@gmail.com", "StockMarketApp");
+			helper.setFrom("akashbalagaon01@gmail.com", "StockMarketApp");
 			helper.setTo(user.getEmail());
 			helper.setSubject("OTP for Account Creation");
 			helper.setText("<h1>Hello " + user.getName() + " Your OTP is : " + user.getOtp() + "</h1>", true);

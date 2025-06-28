@@ -151,7 +151,7 @@ public class StockController {
 		return service.viewPortfolio(session,model);
 	}
 	
-	@GetMapping("/sell{ticker}")
+	@GetMapping("/sell/{ticker}")
 	public String viewSell(@PathVariable String ticker,HttpSession session,Model model)
 	{
 		return service.viewSell(ticker,session,model);
